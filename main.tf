@@ -38,13 +38,14 @@ resource "aws_security_group" "ec2_sg" {
 resource "aws_instance" "my_ec2" {
   ami           = "ami-04ec97dc75ac850b1" 
   instance_type = "t2.micro"
-  key_name      = "rutujk" 
+  key_name      = "rutujaa0" 
 
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
   tags = {
-    Name = "Terraform-EC2-Lab-Ubuntu"
+    Name = "rutuja-terraform"
   }
 }
+
 
 
